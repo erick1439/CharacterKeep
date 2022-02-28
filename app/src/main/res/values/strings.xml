@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Cop4331</string>
+
+    <string-array name="attributes">
+        <item>Name:</item>
+        <item>Race:</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>The name that will be used to identify your character.</item>
+        <item>A character race provides you with a basic set of advantages and special abilities.</item>
+    </string-array>
+
+
+    <string-array name="tesingEdit">
+        <item>josh</item>
+        <item>karen</item>
+        <item>Mike</item>
+        <item>juan</item>
+    </string-array>
+
+
+    <string-array name="Races">
+        <item>Human</item>
+        <item>Elf</item>
+        <item>Dwarf</item>
+        <item>Half</item>
+    </string-array>
+</resources>

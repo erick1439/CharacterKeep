@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit">
+
+    <ImageView
+        android:id="@+id/align"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/realback" />
+
+    <ImageView
+        android:id="@+id/mHpEditTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+
+        app:srcCompat="@drawable/realback" />
+
+    <ImageView
+        android:id="@+id/goBackBtnEdit"
+        android:layout_width="43dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/nameEditTag"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:text="Name:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/goBackBtnEdit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameEditText"
+        android:layout_width="72dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/nameEditTag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/classEditTag"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Class:"
+        app:layout_constraintStart_toEndOf="@+id/nameEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/classEditText"
+        android:layout_width="72dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Class:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/classEditTag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editRaceTag"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:text="Race: "
+        app:layout_constraintStart_toEndOf="@+id/classEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/raceEditText"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Race"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/editRaceTag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mxEditTag"
+        android:layout_width="49dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Mx hp:"
+        app:layout_constraintStart_toEndOf="@+id/raceEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/maxEditText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/mxEditTag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentEditTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Current Hp:"
+        app:layout_constraintStart_toEndOf="@+id/maxEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/currentEditText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/currentEditTag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:background="#D2B48C"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="@+id/mHpEditTag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/wsTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:text="WS:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditTag" />
+
+    <TextView
+        android:id="@+id/bsTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="BS:"
+        app:layout_constraintStart_toEndOf="@+id/wsText"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+    <TextView
+        android:id="@+id/sTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="S:"
+        app:layout_constraintStart_toEndOf="@+id/bsText"
+        app:layout_constraintTop_toBottomOf="@+id/classEditText" />
+
+    <EditText
+        android:id="@+id/wsText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/wsTag"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+    <EditText
+        android:id="@+id/bsText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/bsTag"
+        app:layout_constraintTop_toBottomOf="@+id/classEditTag" />
+
+    <TextView
+        android:id="@+id/tTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="T:"
+        app:layout_constraintStart_toEndOf="@+id/sText"
+        app:layout_constraintTop_toBottomOf="@+id/editRaceTag" />
+
+    <TextView
+        android:id="@+id/inteTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="INTE:"
+        app:layout_constraintStart_toEndOf="@+id/agText"
+        app:layout_constraintTop_toBottomOf="@+id/currentEditTag" />
+
+    <TextView
+        android:id="@+id/felTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="FEL:"
+        app:layout_constraintStart_toEndOf="@+id/wpText"
+        app:layout_constraintTop_toBottomOf="@+id/maxEditText" />
+
+    <TextView
+        android:id="@+id/wpTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="WP:"
+        app:layout_constraintStart_toEndOf="@+id/inteText"
+        app:layout_constraintTop_toBottomOf="@+id/mxEditTag" />
+
+    <TextView
+        android:id="@+id/agTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="AG:"
+        app:layout_constraintStart_toEndOf="@+id/tText"
+        app:layout_constraintTop_toBottomOf="@+id/mxEditTag" />
+
+    <TextView
+        android:id="@+id/aTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:text="A:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wsTag" />
+
+    <TextView
+        android:id="@+id/wTag"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="W:"
+        app:layout_constraintStart_toEndOf="@+id/aText"
+        app:layout_constraintTop_toBottomOf="@+id/bsTag" />
+
+    <EditText
+        android:id="@+id/tText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/tTag"
+        app:layout_constraintTop_toBottomOf="@+id/raceEditText" />
+
+    <EditText
+        android:id="@+id/sText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/sTag"
+        app:layout_constraintTop_toBottomOf="@+id/classEditText" />
+
+    <EditText
+        android:id="@+id/agText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/agTag"
+        app:layout_constraintTop_toBottomOf="@+id/maxEditText" />
+
+    <EditText
+        android:id="@+id/inteText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/inteTag"
+        app:layout_constraintTop_toBottomOf="@+id/currentEditText" />
+
+    <EditText
+        android:id="@+id/felText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/felTag"
+        app:layout_constraintTop_toBottomOf="@+id/currentEditText" />
+
+    <EditText
+        android:id="@+id/aText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/aTag"
+        app:layout_constraintTop_toBottomOf="@+id/wsText" />
+
+    <EditText
+        android:id="@+id/wpText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/wpTag"
+        app:layout_constraintTop_toBottomOf="@+id/maxEditText" />
+
+    <TextView
+        android:id="@+id/sbTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="SB:"
+        app:layout_constraintStart_toEndOf="@+id/wText"
+        app:layout_constraintTop_toBottomOf="@+id/sTag" />
+
+    <TextView
+        android:id="@+id/magTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="MAG:"
+        app:layout_constraintStart_toEndOf="@+id/mText"
+        app:layout_constraintTop_toBottomOf="@+id/inteTag" />
+
+    <TextView
+        android:id="@+id/mTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="M:"
+        app:layout_constraintStart_toEndOf="@+id/tbTecxt"
+        app:layout_constraintTop_toBottomOf="@+id/agTag" />
+
+    <TextView
+        android:id="@+id/tbTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="TB:"
+        app:layout_constraintStart_toEndOf="@+id/sbText"
+        app:layout_constraintTop_toBottomOf="@+id/tTag" />
+
+    <TextView
+        android:id="@+id/fppTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="FPP:"
+        app:layout_constraintStart_toEndOf="@+id/ipText"
+        app:layout_constraintTop_toBottomOf="@+id/felTag" />
+
+    <TextView
+        android:id="@+id/ipTag"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="IP:"
+        app:layout_constraintStart_toEndOf="@+id/magText"
+        app:layout_constraintTop_toBottomOf="@+id/wpTag" />
+
+    <EditText
+        android:id="@+id/magText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/magTag"
+        app:layout_constraintTop_toBottomOf="@+id/inteText" />
+
+    <EditText
+        android:id="@+id/ipText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/ipTag"
+        app:layout_constraintTop_toBottomOf="@+id/wpText" />
+
+    <EditText
+        android:id="@+id/tbTecxt"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/tbTag"
+        app:layout_constraintTop_toBottomOf="@+id/tText" />
+
+    <EditText
+        android:id="@+id/sbText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/sbTag"
+        app:layout_constraintTop_toBottomOf="@+id/sText" />
+
+    <EditText
+        android:id="@+id/mText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/mTag"
+        app:layout_constraintTop_toBottomOf="@+id/agText" />
+
+    <EditText
+        android:id="@+id/wText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/wTag"
+        app:layout_constraintTop_toBottomOf="@+id/bsText" />
+
+    <EditText
+        android:id="@+id/fppText"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="50"
+        app:layout_constraintStart_toEndOf="@+id/fppTag"
+        app:layout_constraintTop_toBottomOf="@+id/felText" />
+
+    <TextView
+        android:id="@+id/itemsTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="168dp"
+        android:text="Items:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/itemsListview"
+        android:layout_width="240dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/itemsTag" />
+
+    <ListView
+        android:id="@+id/talentsListview"
+        android:layout_width="240dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/talentsTag"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="168dp"
+        android:text="Talents:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/talentsListview" />
+
+    <ListView
+        android:id="@+id/skillsListview"
+        android:layout_width="240dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/skillsTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="104dp"
+        android:text="Skills:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/skillsListview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

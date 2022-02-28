@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#BAA1A1"
+        android:clickable="true"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp" />
+
+        <!--component for the name tag-->
+        <TextView
+            android:id="@+id/nameTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/img"
+            android:text="Name:  "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!--component for the name text-->
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/nameTag"
+            android:textSize="18sp" />
+
+        <!--component for the class tag-->
+        <TextView
+            android:id="@+id/classTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameText"
+            android:layout_marginTop="8sp"
+            android:layout_toRightOf="@+id/img"
+            android:text="Class:  "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!--component for the class text-->
+        <TextView
+            android:id="@+id/classText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameText"
+            android:layout_marginTop="8sp"
+            android:layout_toRightOf="@+id/classTag"
+            android:textSize="18sp" />
+
+        <!--component for the race tag-->
+        <TextView
+            android:id="@+id/raceTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/classTag"
+            android:layout_marginTop="8sp"
+            android:layout_toRightOf="@+id/img"
+            android:text="Race:  "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!--component for the race text-->
+        <TextView
+            android:id="@+id/raceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/classText"
+            android:layout_marginTop="8sp"
+            android:layout_toRightOf="@+id/classTag"
+            android:textSize="18sp" />
+
+
+        <!--component for the current hp tag-->
+        <TextView
+            android:id="@+id/currentHpTag"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:text="C. Hp:  "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!--component for the current hp text-->
+        <TextView
+            android:id="@+id/currentHpText"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/currentHpTag"
+            android:textSize="18sp" />
+
+
+        <!--component for the max hp tag-->
+        <TextView
+            android:id="@+id/maxHpTag"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentHpTag"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="45dp"
+            android:text="M. Hp:  "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!--component for the max hp text-->
+        <TextView
+            android:id="@+id/maxHpText"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentHpText"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="8sp"
+            android:layout_toRightOf="@+id/maxHpTag"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/deleteTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:text="Delete Card" />
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/raceTag"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/classTag"-->
+            <!--android:layout_marginTop="8sp"-->
+            <!--android:layout_toRightOf="@+id/img"-->
+            <!--android:text="Race:  "-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="18sp" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>
